@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Blog — Second Life</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner wrap" style="padding:0;">
+    <a href="index.html" class="logo">SECOND<span>LIFE</span><small>FTC TEAM 23869</small></a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="team.html">Meet the Team</a>
+      <a href="robot.html">Robot Archive</a>
+      <a href="tech.html">Tech Talk</a>
+      <a href="outreach.html">Outreach</a>
+      <a href="awards.html">Awards</a>
+      <a href="blog.html" class="active-link">Tech Blog</a>
+      <a href="highlights.html">Highlights</a>
+      <a href="join.html">Join Us</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="first">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow mono">TECH BLOG</div>
+      <h2>Ideas from the build floor.</h2>
+      <p>Short posts by team members on engineering decisions, experiments, and things we're thinking about.</p>
+    </div>
+
+    <div class="blog-grid">
+
+      <!-- ============================================================
+           HOW TO ADD A NEW POST:
+           Copy one of the <article> blocks below, paste it at the TOP
+           of this .blog-grid div (so newest posts appear first),
+           and fill in: tag, date, author, title, excerpt.
+           The first/top post is automatically the "featured" one —
+           change class="blog-card" to class="blog-card featured" on it,
+           and change class="blog-card featured" on the old featured to
+           class="blog-card".
+           ============================================================ -->
+
+      <!-- FEATURED POST (always the most recent, spans full width) -->
+      <article class="blog-card featured">
+        <div class="blog-img">
+          <!-- Replace this div with: <img src="images/your-image.jpg" alt="post image" style="width:100%;height:100%;object-fit:cover;"> -->
+          <div class="img-ph" style="width:100%;height:100%;">
+            <div class="icon">📷</div>
+            <span class="ph-tag">PLACEHOLDER — optional post image</span>
+          </div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="tag">VISION</span>          <!-- category tag -->
+            <span class="date">Jun 2026</span>       <!-- date -->
+            <span class="author">Akash</span>        <!-- author -->
+          </div>
+          <h3>Why we switched from colour tracking to AprilTags</h3>
+          <p class="excerpt">
+            Colour tracking worked fine indoors, but the moment field lighting changed at a qualifier the turret started missing badly. AprilTags gave us a pose estimate that doesn't care about ambient light — here's what the migration looked like and what we'd do differently.
+          </p>
+          <!-- To link to a full post, replace # with your article URL -->
+          <span class="read-more">READ MORE →</span>
+        </div>
+      </article>
+
+      <!-- POST 2 -->
+      <article class="blog-card">
+        <div class="blog-img">
+          <div class="img-ph" style="width:100%;height:100%;">
+            <div class="icon">📷</div>
+            <span class="ph-tag">PLACEHOLDER</span>
+          </div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="tag">ELECTRICAL</span>
+            <span class="date">May 2026</span>
+            <span class="author">Amay</span>
+          </div>
+          <h3>Killing static: ferrite cores and dryer sheets</h3>
+          <p class="excerpt">
+            Our control hub would drop connection mid-match for no obvious reason. Turns out the shooter motor was dumping noise onto the power rail. Here's how we tracked it down and fixed it with $3 of hardware.
+          </p>
+          <span class="read-more">READ MORE →</span>
+        </div>
+      </article>
+
+      <!-- POST 3 -->
+      <article class="blog-card">
+        <div class="blog-img">
+          <div class="img-ph" style="width:100%;height:100%;">
+            <div class="icon">📷</div>
+            <span class="ph-tag">PLACEHOLDER</span>
+          </div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="tag">SOFTWARE</span>
+            <span class="date">Apr 2026</span>
+            <span class="author">Masato</span>
+          </div>
+          <h3>REV touch switch: the simplest fix for shooter timing</h3>
+          <p class="excerpt">
+            We used to fire on a timer — a fixed delay after intake. Inconsistent. Swapping to a physical touch switch that triggers only when a ball is actually seated cut our miss rate significantly.
+          </p>
+          <span class="read-more">READ MORE →</span>
+        </div>
+      </article>
+
+      <!-- BLANK PLACEHOLDER CARD — ready for next post -->
+      <article class="blog-card ph-card">
+        <div class="blog-body" style="padding:32px; align-items:center; justify-content:center; text-align:center; min-height:220px;">
+          <span class="ph-tag">PLACEHOLDER</span>
+          <h3 style="font-size:15px; color:var(--ink-soft); margin-top:10px;">Your next post goes here</h3>
+          <p style="font-size:13px; color:var(--ink-soft); margin-top:8px;">Copy one of the article blocks above, paste it at the top of the blog-grid, and fill in your details.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 FTC Team 23869 — Second Life</div>
+    <div class="mono">SITE OUTLINE · v3</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
